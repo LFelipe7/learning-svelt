@@ -1,6 +1,7 @@
 <script>
 	let name = 'Galego';
-	let minhaFoto = 'src/lib/images/profilepic.jpg'
+	// let minhaFoto = 'src/lib/images/profilepic.jpg'
+	import minhaFoto from '$lib/images/profilepic.jpg';
 </script>
 
 <svelte:head>
