@@ -12,12 +12,19 @@
 <section>
 	<h1>Hello, {name.toLowerCase()}</h1>
 	<img src = {minhaFoto} alt = 'foto de {name}' class = 'profileImage'/>
+	<p>This is a Paragraph</p>
+	<p>This is a Paragraph</p>
 </section>
-
 <style>
 	.profileImage {
 		height: 64px;
 		width: 64px;
+	}
+	p {
+		color: goldenrod;
+		font-family: 'Comic Sans MS', cursive;
+		font-size: 2em;
+		background-color: aqua;
 	}
 	section {
 		display: flex;
