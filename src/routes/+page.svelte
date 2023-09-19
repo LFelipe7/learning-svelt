@@ -10,7 +10,8 @@
 
 <section>
   <!-- <img src = {minhaFoto} alt = 'foto de {name}' class = 'profileImage'/> -->
-
+  <h1>Classifique:</h1>
+	<h2 class="pb-8">Selecione a quantidade de xícaras para cada qualidade.</h2>
   <div class="grid grid-cols-2 gap-x-40 gap-y-20">
     <ClassificationCard />
     <ClassificationCard coffeeClassification="Duro" />
