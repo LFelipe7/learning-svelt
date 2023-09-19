@@ -1,17 +1,22 @@
 <script>
   import DiCoffeescript from "svelte-icons/di/DiCoffeescript.svelte";
+  import FaArrowUp from "svelte-icons/fa/FaArrowUp.svelte";
+  export let coffeeClassification = "Mole";
 </script>
 
 <div class="bg-stone-50 w-64 flex flex-col pt-5 gap-4 rounded-md">
-  <!-- <img src = {DiCoffeescript} alt='Coffee Icon' /> -->
-  <!-- <div class="bg-[length:50px_50px] bg-red-300"> -->
   <div
-    class="icon w-20 bg-white self-center rounded-full border-solid border-stone-200 border-2"
+    class="relative icon w-20 bg-white self-center border-solid border-stone-200 border-2 rounded-full"
   >
-    <DiCoffeescript />
+    <div class="absolute w-5 z-10 right-2 top-4" style="color: #3FA152">
+      <FaArrowUp />
+    </div>
+    <div class="relative" style="color: #444444">
+      <DiCoffeescript />
+    </div>
   </div>
   <div class="text-center text-2xl font-semibold place-content-center">
-    Mole
+    {coffeeClassification}
   </div>
   <div
     class="bg-gray-300 font-bold h-12 flex-row flex justify-between text-center"
