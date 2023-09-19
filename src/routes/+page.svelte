@@ -1,7 +1,6 @@
 <script>
-	import Counter from './Counter.svelte';
-	import welcome from '$lib/images/svelte-welcome.webp';
-	import welcome_fallback from '$lib/images/svelte-welcome.png';
+	let name = 'Galego';
+	let minhaFoto = 'src/lib/images/profilepic.jpg'
 </script>
 
 <svelte:head>
@@ -10,25 +9,15 @@
 </svelte:head>
 
 <section>
-	<h1>
-		<span class="welcome">
-			<picture>
-				<source srcset={welcome} type="image/webp" />
-				<img src={welcome_fallback} alt="Welcome" />
-			</picture>
-		</span>
-
-		to your new<br />SvelteKit app
-	</h1>
-
-	<h2>
-		try editing <strong>src/routes/+page.svelte</strong>
-	</h2>
-
-	<Counter />
+	<h1>Hello, {name.toLowerCase()}</h1>
+	<img src = {minhaFoto} alt = 'foto de {name}' class = 'profileImage'/>
 </section>
 
 <style>
+	.profileImage {
+		height: 64px;
+		width: 64px;
+	}
 	section {
 		display: flex;
 		flex-direction: column;
