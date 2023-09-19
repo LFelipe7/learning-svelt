@@ -1,7 +1,9 @@
 <script>
-	let name = 'Galego';
+	import "../app.css";
+	import ClassificationCard from "./ClassificationCard.svelte";
+	let name = "Galego";
 	// let minhaFoto = 'src/lib/images/profilepic.jpg'
-	import minhaFoto from '$lib/images/profilepic.jpg';
+	import minhaFoto from "$lib/images/profilepic.jpg";
 </script>
 
 <svelte:head>
@@ -10,22 +12,31 @@
 </svelte:head>
 
 <section>
-	<h1>Hello, {name.toLowerCase()}</h1>
+	<!-- <h1 class = 'bg-red-200 text-5xl  font-black'>Hello, Galego!</h1>
 	<img src = {minhaFoto} alt = 'foto de {name}' class = 'profileImage'/>
-	<p>This is a Paragraph</p>
-	<p>This is a Paragraph</p>
+	<p class = 'font-semibold pt-6'>This is a Paragraph</p>
+	<p class = 'font-semibold pt-6'>This is a Paragraph</p> -->
+	<div class="grid grid-cols-2 gap-x-40 gap-y-20">
+		<ClassificationCard />
+		<ClassificationCard />
+		<ClassificationCard />
+		<ClassificationCard />
+		<ClassificationCard />
+		<ClassificationCard />
+	</div>
 </section>
+
 <style>
 	.profileImage {
 		height: 64px;
 		width: 64px;
 	}
-	p {
+	/* p {
 		color: goldenrod;
 		font-family: 'Comic Sans MS', cursive;
 		font-size: 2em;
 		background-color: aqua;
-	}
+	} */
 	section {
 		display: flex;
 		flex-direction: column;
